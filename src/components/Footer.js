@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Footer = () => {
 
     const footerStyle = {backgroundColor: '#765491', color: '#d7beea', textAlign: 'center'};
-    const iconStyle = {color: '#d7beea', fontSize: '40px', textAlign: 'center'};
+    const iconStyle = {color: 'white', fontSize: '40px', textAlign: 'center'};
     return (
         
     <footer className="page-footer white center-on-small-only" style={footerStyle}>
@@ -12,8 +12,8 @@ const Footer = () => {
     <div className="container-fluid">
         <div className="row">
             <div className="col-md-12">
-                <h5 className="title">Footer Content</h5>
-                <p>FindMuse helps writers find writers. Follow us to continue the conversation!</p>
+                <h5 className="title">FindMuse</h5>
+                <p>FindMuse helps writers find writers. Connect with the writer community even more on social!</p>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@ const Footer = () => {
     <div className="footer-copyright">
 
         <div className="container-fluid">
-            © 2017 Copyright: <a href="https://github.com/Saluki-scribe" target="_blank"> Taran Clarke </a>
+            © 2017 Copyright: <a href="https://github.com/Saluki-scribe" target="_blank"> <span style={{color: 'white'}}>Taran Clarke</span> </a>
         </div>
     </div>
 
