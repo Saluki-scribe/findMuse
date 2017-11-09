@@ -1,38 +1,55 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Avatar from './Avatar';
 
- const Header = () => {
+ class Header extends Component {
 
-    const headerStyle={color: '#765491', margin: 'auto 20px', fontSize: '35px', fontFamily: 'Merienda',
-    border: '0px solid black', borderTop: '0', borderBottom: '0', borderLeft: '0', padding: '10px',
-    textAlign: 'left'}
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+        }
 
-    return (
-    <div className="App">
-       
-        <header className="App-header container-fluid">
-            
-            <div className="row">
+    handleClick(e) { 
+        e.preventDefault();
+        const page = e.target.value;
+        this.props.onClick(page);
+        console.log("handleClick executed in Header.js: page = " + page);
+      }
 
-                <div id="navBar">
-                    <img src="/favicon.ico" className="App-logo" alt="logo" />
-                    
-                    <a href="/search" style={headerStyle} hover={{color: 'blue'}}>Search</a>
-                    <a href="/likes" style={headerStyle}>Likes</a>
-                    <a href="/profile" style={headerStyle}>Profile</a>
+    render() {
+        const headerStyle={color: '#765491', margin: 'auto 20px', fontSize: '35px', fontFamily: 'Merienda',
+        border: '0px solid black', borderTop: '0', borderBottom: '0', borderLeft: '0', padding: '10px',
+        textAlign: 'left'}
 
-                    <div className="pull-right" style={{marginRight: 50, backgroundColor: 'white', borderRadius: 60}}>
-                    <a href="/profile" ><Avatar /></a></div>
+        return (
+        <div className="App">
+        
+            <header className="App-header container-fluid">
+                
+                <div className="row">
+
+                    <div id="navBar">
+                        <img src="/favicon.ico" className="App-logo" alt="logo" />
+                        
+                        <a href="/search" style={headerStyle} onClick={this.handleClick}>Search</a>
+                        <a href="/likes" style={headerStyle}>Likes</a>
+                        <a href="/profile" style={headerStyle}>Profile</a>
+
+                        <div className="pull-right" style={{marginRight: 50, backgroundColor: 'white', borderRadius: 60}}>
+                        <a href="/profile" ><Avatar /></a></div>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </header>
 
-        </header>
+        </div>
+        );
 
-    </div>
-    );
+
+}
+
   };
 
   Header.defaultProps = {
