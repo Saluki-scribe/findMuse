@@ -3,15 +3,15 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Body from './Body';
 
-const Profile = () => {
+const Likes = () => {
     return (
         <div>
             <Header />
             <Body />
-                I'm all about YOU!              
+            I LIKE you! Get it?                
             <Footer />
         </div>
     );
-};
+}
 
-export default Profile; 
+export default Likes; 

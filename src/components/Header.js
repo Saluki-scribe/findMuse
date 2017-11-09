@@ -30,7 +30,7 @@ import Avatar from './Avatar';
                     <div id="navBar">
                         <img src="/favicon.ico" className="App-logo" alt="logo" />
                         
-                        <a href="/search" style={headerStyle} onClick={this.handleClick}>Search</a>
+                        <a href="/search" style={headerStyle}>Search</a>
                         <a href="/likes" style={headerStyle}>Likes</a>
                         <a href="/profile" style={headerStyle}>Profile</a>
 

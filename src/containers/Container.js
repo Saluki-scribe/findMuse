@@ -10,21 +10,20 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 class Container extends Component {
 
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
     
-        this.state = { page: 'Profile' };
-        this.handleClick = this.handleClick.bind(this);
-      }
+    //     this.state = { page: 'Profile' };
+    //     this.handleClick = this.handleClick.bind(this);
+    //   }
 
-    handleClick = (newPage) => {        
-        // calling handleClick will 
-        // result in a state change:
-        this.setState(
-          { page: newPage }
-        );
-      }
-
+    // handleClick = (newPage) => {        
+       
+    //     this.setState(
+    //       { page: newPage }
+    //     );
+    //   }
+    
     render () {
 
         // let page = this.state.page;
@@ -57,25 +56,11 @@ class Container extends Component {
             <div>
                 <div>
                  <Header />
-                 <Body />
+                 <Body text="I'm the container component!"/>
                  <Footer/>
                </div>
             </div>
         );
-
-        // if (page === 'Home') {
-        //     return (
-        //         <div style={containerStyle}>
-        //             <Search />
-        //         </div>
-        //     );
-        // } else {
-        //     return (
-        //         <div style={containerStyle}>
-        //            {this.state.page}
-        //         </div>
-        //     );
-        // }
         
     }
     

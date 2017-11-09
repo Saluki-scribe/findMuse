@@ -1,12 +1,22 @@
 import React from 'react';
 
-const Body = () => {
+class Body extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { text: "I\'m just a body..." };
+    }
 
-    const containerStyle = {border: '#404041 solid 1px', padding: '200px'};
-    
-    return (
-        <div style={containerStyle}></div>
-    )
+    render () {
+        const containerStyle = {border: '#404041 solid 1px', padding: '200px'};
+        
+        return (            
+            <div style={containerStyle}>
+                <p>{this.state.text}</p>
+            </div>
+        )
+    }
+
+   
 
 }
 
