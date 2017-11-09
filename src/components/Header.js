@@ -11,8 +11,7 @@ import Avatar from './Avatar';
 
     handleClick(e) { 
         e.preventDefault();
-        const page = e.target.value;
-        this.props.onClick(page);
+        const page = e.target;
         console.log("handleClick executed in Header.js: page = " + page);
       }
 

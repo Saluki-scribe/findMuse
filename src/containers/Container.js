@@ -7,8 +7,13 @@ import Header from '../components/Header';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 class Container extends Component {
-    state = { page: 'Profile' };
 
+    constructor(props) {
+        super(props);
+    
+        this.state = { page: 'Profile' };
+        this.handleClick = this.handleClick.bind(this);
+      }
 
     handleClick = (newPage) => {        
         // calling handleClick will 
@@ -26,17 +31,17 @@ class Container extends Component {
             
         switch (page) {
             case 'Home':
-            case 'Search':
-            currentPage = <Search onClick={this.handleClick} />
+            case 'http://localhost:3000/search':
+            currentPage = <Search />
             break;
             case 'Intake':
-            currentPage = <Intake onClick={this.handleClick} />
+            currentPage = <Intake />
             break;
             case 'Contact':
-            currentPage = <Contact onClick={this.handleClick} />
+            currentPage = <Contact />
             break;
             case 'Profile':
-            currentPage = <Profile onClick={this.handleClick} />
+            currentPage = <Profile />
             break;
             default:
             return (
@@ -48,7 +53,6 @@ class Container extends Component {
 
         return (
             <div style={containerStyle}>
-                
                 {currentPage}
             </div>
         );
