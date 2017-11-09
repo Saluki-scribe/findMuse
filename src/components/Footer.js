@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Footer = () => {
 
-    const footerStyle = {backgroundColor: '#765491', color: '#d7beea', textAlign: 'center'};
+    const footerStyle = {backgroundColor: '#765491', color: '#d7beea', textAlign: 'center', paddingBottom: '10px'};
     const iconStyle = {color: 'white', fontSize: '40px', textAlign: 'center'};
     return (
         
