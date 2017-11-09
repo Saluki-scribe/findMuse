@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Body from './Body';
 import Writer from '../components/Writer';
+import SearchBar from '../components/SearchBar';
 
 const Search = () => {
 
@@ -12,7 +13,7 @@ const Search = () => {
         <div>
             <Header />
             {/* <Body /> */}
-            
+            <SearchBar />
             <div className="container-fluid">
                 <div className="row">
 

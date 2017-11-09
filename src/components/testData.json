@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Jon Snow",
+            "writeType": "Prose",
+            "genres": ["horror", "literary", "YA"],
+            "wants" : ["roleplay", "collaboration"]
+        },
+        {
+            "id": 2,
+            "name": "Testy",
+            "writeType": "Poetry",
+            "genres": ["fantasy", "literary", "YA"],
+            "wants" : ["roleplay", "your mom"]
+        },
+        {
+            "id": 3,
+            "name": "El Hur",
+            "writeType": "Prose",
+            "genres": ["horror", "YA"],
+            "wants" : ["collaboration"]
+        },
+        {
+            "id": 4,
+            "name": "Link",
+            "writeType": "Nonfiction",
+            "genres": ["thriller"],
+            "wants" : ["critique"]
+        }
+    ]
+}
