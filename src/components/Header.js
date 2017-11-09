@@ -4,7 +4,7 @@ import Avatar from './Avatar';
 
  const Header = () => {
 
-    const headerStyle={color: '#765491', margin: 'auto 20px', fontSize: '35px', 
+    const headerStyle={color: '#765491', margin: 'auto 20px', fontSize: '35px', fontFamily: 'Merienda',
     border: '0px solid black', borderTop: '0', borderBottom: '0', borderLeft: '0', padding: '10px',
     textAlign: 'left'}
 
@@ -18,11 +18,12 @@ import Avatar from './Avatar';
                 <div id="navBar">
                     <img src="/favicon.ico" className="App-logo" alt="logo" />
                     
-                    <a href="/find" style={headerStyle} hover={{color: 'blue'}}>Search</a>
-                    <a href="/friends" style={headerStyle}>Friends</a>
+                    <a href="/search" style={headerStyle} hover={{color: 'blue'}}>Search</a>
+                    <a href="/likes" style={headerStyle}>Likes</a>
                     <a href="/profile" style={headerStyle}>Profile</a>
 
-                    <div className="pull-right" style={{marginRight: 50, backgroundColor: 'white', borderRadius: 60}}><a href="#" ><Avatar /></a></div>
+                    <div className="pull-right" style={{marginRight: 50, backgroundColor: 'white', borderRadius: 60}}>
+                    <a href="/profile" ><Avatar /></a></div>
 
                 </div>
 
