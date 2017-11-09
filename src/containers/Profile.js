@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <div>
             <Header />
-            <Body />
+           
                 I'm all about YOU!              
             <Footer />
         </div>

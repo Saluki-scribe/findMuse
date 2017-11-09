@@ -12,8 +12,8 @@ const Footer = () => {
     <div className="container-fluid">
         <div className="row">
             <div className="col-md-12">
-                <h5 className="title">FindMuse</h5>
-                <p>FindMuse helps writers find writers. Connect with the writer community even more on social!</p>
+                <h4 className="title" style={{color: 'white', fontFamily: 'Merienda'}}>FindMuse</h4>
+                <p>FindMuse helps writers find writers. Expand your writer community even more on our social!</p>
             </div>
         </div>
     </div>

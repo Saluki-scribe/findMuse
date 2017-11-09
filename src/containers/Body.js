@@ -7,7 +7,7 @@ class Body extends React.Component {
     }
 
     render () {
-        const containerStyle = {border: '#404041 solid 1px', padding: '200px'};
+        const containerStyle = {border: '#404041 solid 1px',  borderLeft: '0',  borderRight: '0', padding: '200px'};
         
         return (            
             <div style={containerStyle}>
