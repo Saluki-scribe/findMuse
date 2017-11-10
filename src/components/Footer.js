@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="row">
             <div className="col-md-12">
                 <h4 className="title" style={{color: 'white', fontFamily: 'Merienda'}}>FindMuse</h4>
-                <p>FindMuse helps writers find writers. Expand your writer community even more on our social!</p>
+                <p>FindMuse helps writers find writers. Expand your writer community even more by following us on social!</p>
             </div>
         </div>
     </div>
@@ -37,8 +37,5 @@ const Footer = () => {
     )
   };
   
-  Footer.defaultProps = {
-    message: 'You\'re amazing'
-  };
   
 export default Footer;

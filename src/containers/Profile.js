@@ -7,8 +7,14 @@ const Profile = () => {
     return (
         <div>
             <Header />
-           
-                I'm all about YOU!              
+            {/* <Body />             */}
+            <div style={{height: ''}}>
+                <div style={{float: "left", display: 'inline', height: '350px', width: '100%', padding: '30px', paddingTop: '10px', 
+                    color: '#765491', backgroundColor: 'white', textAlign: 'center', 
+                    border: '1px solid black', borderLeft: '0',  borderRight: '0',}}>
+                       <h2>Harry Potter</h2>
+                </div>
+            </div>
             <Footer />
         </div>
     );
