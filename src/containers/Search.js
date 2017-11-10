@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import Body from './Body';
 import Writer from '../components/Writer';
 import SearchBar from '../components/SearchBar';
-
 const Search = () => {
 
     const searchStyle = {};

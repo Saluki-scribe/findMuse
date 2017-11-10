@@ -4,10 +4,10 @@ class SearchBar extends React.Component {
 
     render() {
 
-        const searchStyle = {height: '25px'}
+        const searchStyle = {height: '75px', backgroundColor: '#d7beea', borderTop: '1px solid black'}
 
         return (
-            <div className='containerFluid'>Here's ya search bar</div>
+            <div className='containerFluid' style={searchStyle}>Here's ya search bar</div>
         )
     }
 }

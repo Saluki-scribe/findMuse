@@ -1,13 +1,13 @@
 import React from 'react';
 import Avatar from './Avatar';
 
-const Writer = () => {
+const Writer = (user) => {
     const writerStyle = {height: '350px', width: '275px', color: '#765491', backgroundColor: '#d7beea', border: '1px solid #765491', borderRadius: '10px',
     margin: '10px', float: 'left'};
 
 
     let typeOf = 'Prose';
-    let writerName = 'Name Nameity';
+    let writerName = "Name Nameity";
 
     let genreArray = ['fantasy', 'horror', 'YA'];
     let wantArray = ['roleplay', 'collaboration']; 
