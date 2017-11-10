@@ -9,7 +9,7 @@ import Likes from '../containers/Likes';
 export default () => (
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact component={Container} />
+            <Route path="/" exact component={Search} />
             <Route path="/signin" exact component={Container} />
             <Route path="/intake" exact component={Intake} />
             <Route path="/search" exact component={Search} />
