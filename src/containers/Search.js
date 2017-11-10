@@ -12,7 +12,7 @@ const Search = () => {
         <div>
             <Header />
             {/* <Body /> */}
-            <SearchBar />
+            {/* <SearchBar /> */}
             <div className="container-fluid">
                 <div className="row">
 
@@ -22,6 +22,9 @@ const Search = () => {
 
                        <h2> Your Matches</h2>
                         <div>
+                            <Writer />
+                            <Writer />
+                            <Writer />
                             <Writer />
                             <Writer />
                             <Writer />
